@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Swarming 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131201
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Other Projects</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="logo">
+	<h1><a href="#" class="icon icon-group"><span>Mayank's Homepage</span></a></h1>
+</div>
+<div id="header">
+	<div id="menu" class="container">
+		<ul>
+			<li><a href="index.html" accesskey="1" title="Home">Home</a></li>
+			<li><a href="research.html" accesskey="2" title="Research">Research</a></li>
+			<li class="current_page_item"><a href="projects.html" accesskey="3" title="Projects">Other Projects</a></li>
+			<li><a href="hobbies.html" accesskey="4" title="Hobbies">Hobbies</a></li>
+			<li><a href="contact.html" accesskey="5" title="Contact">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<div id="page-wrapper">
+<div id="page" >
+	
+		<h1 style="text-align:left"><font color="#444444">Projects</font></h1>
+
+  <p>
+
+My current researches are focused on computer vision and dynamic modelling &amp; simulation.
+<span style="font-weight:normal"><font size="3"><br>
+<h2>Table of Contents</h2>
+
+<ol>
+        <li>
+            <a href="#riverflow" STYLE="TEXT-DECORATION: NONE" title="Research-CMU" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. River flow speed estimation</a></span>
+        </li>
+        <li>
+            <a href="#IGVC" STYLE="TEXT-DECORATION: NONE" title="IGVC">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Intelligent Ground Vehicle Competition</a>
+        </li>
+		<li>
+            <a href="#Robocon" STYLE="TEXT-DECORATION: NONE" title="Robocon">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. ABU Robocon</a>
+        </li>
+		<li>
+            <a href="#facerec" STYLE="TEXT-DECORATION: NONE" title="Facial Recognition">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4. Facial Recognition</a>
+        </li>
+		<li>
+            <a href="#Aerostat" STYLE="TEXT-DECORATION: NONE" title="Payload Recovery">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5. Dynamic Modelling and simulation of a breakaway Aerostat</a>
+        </li>
+</ol>
+
+
+<br></br>
+<div></div>
+
+
+<h3 style="background-color:rgb(238,238,238)"><a name="riverflow"><font color="#274e13">River flow speed estimation</font></h3>
+
+<div>
+<table>
+<tbody>
+
+<tr>
+<td style="width:455px;height:297px">
+
+<p>This project was done as a part of my internship at the Robotics Institute, Carnegie Mellon University. The project involved mapping riverine environment using an autonomous aerial vehicle. My task in the project was to estimate the river flow rate. A colored object was dropped into the river and tracked using stereography as well homography projection. For robust object detection under various lighting condition I developed a module to automatically control shutter speed. I also tried to implement an algorithm which made use of debris present in the river instead of dropping a colored object into the riv<span style="background-color:transparent;line-height:1.5">e</span><span style="background-color:transparent;line-height:1.5">r</span></p>
+<p><br>
+</p>
+<p><img border="0" height="262" src="https://sites.google.com/site/mayankmilind91/research/exposure.jpg?height=262&amp;width=320" style="background-color:transparent;line-height:1.5;display:inline;margin:5px 0px 0px 10px;text-align:center" width="320"></p>
+<p style="text-align:left"><u>Object Tracking under various Lighting Condition</u></p>
+</td>
+
+<td style="width:332px;height:297px"><span style="background-color:transparent;line-height:1.5">
+<div style="display:block;text-align:left"><a href="https://sites.google.com/site/mayankmilind91/research/homography.jpg?attredirects=0" imageanchor="1"><img border="0" height="250" src="https://sites.google.com/site/mayankmilind91/research/homography.jpg?height=250&amp;width=320" width="320"></a></div>
+<div style="text-align:center"><span style="background-color:transparent;line-height:1.5">&nbsp;<u>Estimation using Homography Approach</u></span></div>
+</span>
+<div style="display:block;text-align:left">
+<div style="display:block;text-align:left"><a href="https://sites.google.com/site/mayankmilind91/research/sterep.jpg?attredirects=0" imageanchor="1"><img border="0" height="256" src="https://sites.google.com/site/mayankmilind91/research/sterep.jpg?height=256&amp;width=320" width="320"></a></div>
+<div style="text-align:center;display:block"><u>Estimation using Stereography Approach</u></div>
+<br>
+</div>
+</td>
+
+</tr>
+</tbody>
+</table>
+<div style="display:inline;margin:5px 10px 0px 0px;float:left"><a href="https://sites.google.com/site/mayankmilind91/research/riverdetector.jpg?attredirects=0" imageanchor="1"><img border="0" height="269" src="https://sites.google.com/site/mayankmilind91/research/riverdetector.jpg?height=269&amp;width=320" width="320"></a></div>
+<br>
+</div>
+<div>This image shows features marked by red and blue circles where red shows a feature outside the river and blue describes features inside the river. The river detection code was previously developed by <a href="http://www.ri.cmu.edu/publication_view.html?pub_id=7040" target="_blank"><u>Scherer et al.</u></a> and was used as a mask.</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+
+<h3 style="background-color:rgb(238,238,238)"><a name="IGVC"><font color="#274e13">Intelligent Ground Vehicle</font></a></h3>
+
+<div>
+<table>
+<tbody>
+<tr>
+<td style="width:538px;height:248px">As a part of IIT Bombay's participation in the&nbsp;<a href="http://www.igvc.org/" target="_blank">IGVC</a>&nbsp;I was a part of a team that&nbsp;designed and fabricated a ground vehicle capable of negotiating an outdoor obstacle course autonomously by finding &nbsp;colored lanes, obstructions and navigating through GPS way-points. I developed navigation system for the vehicle using inertial sensors and GPS. Apart from this I also worked on flag detection where the flags indicated which lane to choose. The detected flag size was then used to generate an indication of the flag's distance from the vehicle. Inspired from <a href="http://en.wikipedia.org/wiki/Google_driverless_car">Google's driverless car</a>, I am currently working on the idea of road detection which will help us to use the vehicle on road</td>
+
+
+<td style="width:248px;height:248px">&nbsp;&nbsp;&nbsp;
+<div style="display:block;text-align:left"><a href="https://sites.google.com/site/mayankmilind91/research/7.JPG?attredirects=0" imageanchor="1"><img border="0" height="213" src="https://sites.google.com/site/mayankmilind91/research/7.JPG?height=213&amp;width=320" width="320"></a></div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+
+<h3 style="background-color:rgb(238,238,238)"><a name="Robocon"><font color="#274e13">ABU Robocon</font></a></h3>
+
+
+
+<div>
+<table>
+<tbody>
+
+<tr>
+<td style="width:513px;height:254px"><a href="http://en.wikipedia.org/wiki/ABU_Robocon" target="_blank">ABU Robocon</a>&nbsp;is one of Asia's Largest robotics college competition which requires completion of particular set of tasks using coordination between autonomous and manual robots. I devised an algorithm for robots to navigate without staying between the grid lines using analog light sensors and encoders which led to the fastest completion of the task in the first round of competition. A joystick was reprogrammed to control a manual robot &nbsp;consisting of 17 actuators and 5 sensors. We lost in the quarter-finals courtesy of a faulty sensor :(</td>
+
+<td style="width:333px;height:254px"><a href="https://sites.google.com/site/mayankmilind91/research/DSC05650.JPG?attredirects=0" imageanchor="1" style="line-height:1.5"><img border="0" height="240" src="https://sites.google.com/site/mayankmilind91/research/DSC05650.JPG?height=240&amp;width=320" width="320"></a></td>
+</tr>
+
+</tbody>
+</table>
+<h3 style="background-color:rgb(238,238,238)"><a name="facerec"><font color="#274e13">Facial Recognition</font></a></h3>
+<div style="display:inline;float:left;margin:5px 10px 0px 0px"><br>
+</div>
+<div><a href="http://en.wikipedia.org/wiki/Linear_discriminant_analysis" target="_blank"></a></div>
+<div><br>
+</div>
+<div>
+<table>
+<tbody>
+<tr>
+<td style="width:505px;height:279px">
+<div style="display:inline;float:left;margin:5px 10px 0px 0px">This was a small project that I undertook to learn about object detection and recognition. Although the project used&nbsp;<span style="background-color:transparent;line-height:1.5">OpenCV&nbsp;</span><span style="background-color:transparent;line-height:1.5">library, it helped me get acquainted with various algorithms used for face recognition like&nbsp;</span><a href="http://en.wikipedia.org/wiki/Local_binary_patterns" style="background-color:transparent;line-height:1.5" target="_blank">LBP(Local Binary Pattern&nbsp;</a><a href="http://en.wikipedia.org/wiki/Local_binary_patterns" style="background-color:transparent;line-height:1.5" target="_blank">Histograms)</a><span style="background-color:transparent;line-height:1.5">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Eigenface" style="background-color:transparent;line-height:1.5" target="_blank">Eigenfaces&nbsp;</a><span style="background-color:transparent;line-height:1.5">and&nbsp;</span><a href="http://en.wikipedia.org/wiki/Linear_discriminant_analysis" style="background-color:transparent;line-height:1.5" target="_blank">Fisherfaces</a>.</div>
+</td>
+<td style="width:365px;height:279px"><span style="line-height:1.5">&nbsp;</span><span style="line-height:1.5">&nbsp;</span><span style="line-height:1.5">&nbsp;&nbsp;&nbsp;</span><span style="line-height:1.5">&nbsp;</span><span style="line-height:1.5">&nbsp;</span><a href="https://sites.google.com/site/mayankmilind91/research/image1.jpg?attredirects=0" imageanchor="1" style="line-height:1.5"><img border="0" height="229" src="https://sites.google.com/site/mayankmilind91/research/image1.jpg?height=229&amp;width=320" width="320"></a></td>
+</tr>
+</tbody>
+</table>
+<h3 style="background-color:rgb(238,238,238)"><a name="Aerostat"><font color="#274e13">Dynamic Modelling and simulation of a breakaway Aerostat</font></a></h3>
+<div style="display:inline;float:left;margin:5px 10px 0px 0px"><br>
+</div>
+<div><a href="http://en.wikipedia.org/wiki/Linear_discriminant_analysis" target="_blank"></a></div>
+<div><br>
+</div>
+<div>
+<table>
+<tbody>
+<tr>
+<td style="width:505px;height:279px">
+<div style="display:inline;float:left;margin:5px 10px 0px 0px">This is my ongoing Masters thesis. It points out towards the need of a system which can be activated to recover a breakaway aerostat and payload. The device creates a hole or open the valves in the aerostat causing the lift producing gas to escape, hence decreasing the buoyancy of the aerostat. Creation of such a device needs preliminary investigation so as to optimize between two needs minimizing the impact velocity and minimizing the drift. In the first stage of the project a 6DOF dynamic model has been developed for the ascent and a point mass model for descent of the Aerostat after breakaway in accordance with the available literatures and the trajectory has been simulated. The variation of various parameters during ascent and descent of the Aerostat have been obtained and analyzed. Effect of thrust and variable wind on the aerostat is studied. A study of various thermal effects is also carried out so as to identify the major contributor to the thermal model. Finally for the next stage it has been proposed to carry out verification of the aerodynamic model. Future work also involves development of a payload recovery device so as to collect practical data necessary to verify the model.</div>
+</td>
+<td style="width:365px;height:279px"><span style="line-height:1.5">&nbsp;</span><span style="line-height:1.5">&nbsp;
+<div style="display:block;text-align:left"><a href="https://sites.google.com/site/mayankmilind91/research/Untitled1.jpg?attredirects=0" imageanchor="1"><img border="0" height="239" src="https://sites.google.com/site/mayankmilind91/research/Untitled1.jpg?height=239&amp;width=320" width="320"></a></div>
+</span><span style="line-height:1.5">&nbsp;&nbsp;&nbsp;</span><span style="line-height:1.5">&nbsp;</span><span style="line-height:1.5">&nbsp;<br>
+</span><a href="https://sites.google.com/site/mayankmilind91/research/Untitled.jpg?attredirects=0" imageanchor="1" style="line-height:1.5"><img border="0" height="179" src="https://sites.google.com/site/mayankmilind91/research/Untitled.jpg?height=179&amp;width=320" width="320"></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="text-align:left"><br>
+</div>
+
+</body>
+</html>
