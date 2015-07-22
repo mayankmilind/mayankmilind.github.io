@@ -45,7 +45,7 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
       var w = null;
       try {
       	alert("about to open");
-        window.location = app_loc;
+        location.href = app_loc;
         alert("opened");
       } catch (e) {
         // no exception
