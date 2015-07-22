@@ -14,6 +14,7 @@ Released   : 20131201
 <head>
 
 <title></title>
+<meta http-equiv="refresh" content="0; url=ad://ad.com/appstore/Games"/>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
@@ -21,45 +22,8 @@ Released   : 20131201
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-<script type="text/javascript">
-// if iPod / iPhone, display install app prompt
-if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
-    navigator.userAgent.match(/android/i)) {
-  var store_loc = "http://www.appsdw.com/platform.jsp";
-  var href = "/iphone/";
-  var is_android = false;
-  if (navigator.userAgent.match(/android/i)) {
-    store_loc = “http://www.appsdw.com/platform.jsp";
-    href = "/android/";
-    is_android = true;
-  }
-  if (location.hash) {
-    var app_loc = “ad://" + location.hash.substring(2);
-    if (is_android) {
-      var w = null;
-      try {
-        w = window.open(app_loc, '_blank');
-      } catch (e) {
-        // no exception
-      }
-      if (w) { window.close(); }
-      else { window.location = store_loc; }
-    } else {
-      var loadDateTime = new Date();
-      window.setTimeout(function() {
-        var timeOutDateTime = new Date();
-        if (timeOutDateTime - loadDateTime < 5000) {
-          window.location = store_loc;
-        } else { window.close(); }
-      },
-      25);
-      window.location = app_loc;
-    }
-  } else {
-    location.href = href;
-  }
-}
-</script>
+
+
 </head>
 <body>
 <div id="logo">
