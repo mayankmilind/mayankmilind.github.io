@@ -31,30 +31,21 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
   var is_android = false;
   if (navigator.userAgent.match(/android/i)) {
     store_loc = 'http://www.appsdw.com/platform.jsp';
-    alert(store_loc);
     href = "/android/";
     is_android = true;
-    alert(is_android);
   }
-  alert("now here");
   if (is_android) {
     var app_loc = 'ad://ad.com/appstore/Games';
-    alert(app_loc);
     if (is_android) {
-    	alert("is android");
       var w = null;
       try {
-      	alert("about to open");
         location.href = app_loc;
-        alert("opened");
       } catch (e) {
         // no exception
-        alert("in exception android");
       }
-      	alert("is android");
       if (w) { 
-      	 alert("close");window.close(); }
-      else {  alert("store_loc");window.location = store_loc; }
+      	 window.close(); }
+      else {  window.location = store_loc; }
     } else {
       var loadDateTime = new Date();
       window.setTimeout(function() {
