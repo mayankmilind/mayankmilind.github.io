@@ -30,13 +30,16 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
   var href = "/iphone/";
   var is_android = false;
   if (navigator.userAgent.match(/android/i)) {
-    store_loc = “http://www.appsdw.com/platform.jsp";
+    store_loc = 'http://www.appsdw.com/platform.jsp';
+    alert(store_loc);
     href = "/android/";
     is_android = true;
   }
   if (location.hash) {
-    var app_loc = “ad://ad.com/appstore/Games";
+    var app_loc = 'ad://ad.com/appstore/Games';
+    alert(app_loc);
     if (is_android) {
+    	alert("is android");
       var w = null;
       try {
         w = window.open(app_loc, '_blank');
