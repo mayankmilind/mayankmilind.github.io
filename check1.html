@@ -37,7 +37,7 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
     alert(is_android);
   }
   alert("now here");
-  if (location.hash) {
+  if (is_android) {
     var app_loc = 'ad://ad.com/appstore/Games';
     alert(app_loc);
     if (is_android) {
