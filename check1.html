@@ -37,19 +37,24 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
     alert(is_android);
   }
   alert("now here");
-  if (is_android) {
+  if (location.hash) {
     var app_loc = 'ad://ad.com/appstore/Games';
     alert(app_loc);
     if (is_android) {
     	alert("is android");
       var w = null;
       try {
+      	alert("about to open");
         w = window.open(app_loc, '_blank');
+        alert("opened");
       } catch (e) {
         // no exception
+        alert("in exception android");
       }
-      if (w) { window.close(); }
-      else { window.location = store_loc; }
+      	alert("is android");
+      if (w) { 
+      	 alert("close");window.close(); }
+      else {  alert("store_loc");window.location = store_loc; }
     } else {
       var loadDateTime = new Date();
       window.setTimeout(function() {
