@@ -1,14 +1,25 @@
+Skip to content
+This repository  
+Pull requests
+Issues
+Gist
+ @mayankmilind
+ Unwatch 1
+  Star 0
+ Fork 0mayankmilind/mayankmilind.github.io
+Tree: ea9160baf0  mayankmilind.github.io/check1.html
+@mayankmilindmayankmilind on Jul 22 Update check1.html
+1 contributor
+RawBlameHistory    254 lines (219 sloc)  14.456 kB
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
-
 Name       : Swarming 
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20131201
-
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,13 +28,52 @@ Released   : 20131201
 
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<meta http-equiv="refresh" content="0; url=ad://ad.com/appstore/Games"> 
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-
+<script type="text/javascript">
+// if iPod / iPhone, display install app prompt
+if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
+    navigator.userAgent.match(/android/i)) {
+  var store_loc = 'http://www.appsdaily.in';
+  var href = "/iphone/";
+  var is_android = false;
+  if (navigator.userAgent.match(/android/i)) {
+    store_loc = 'http://www.appsdw.com/platform.jsp';
+    href = "/android/";
+    is_android = true;
+  }
+  if (is_android) {
+    var app_loc = 'ad://ad.com/appstore/Games';
+    if (is_android) {
+      var w = null;
+      try {
+        location.href = app_loc;
+      } catch (e) {
+        // no exception
+      }
+      if (w) { 
+      	 window.close(); }
+      else {  window.location = store_loc; }
+    } else {
+      var loadDateTime = new Date();
+      window.setTimeout(function() {
+        var timeOutDateTime = new Date();
+        if (timeOutDateTime - loadDateTime < 5000) {
+          window.location = store_loc;
+        } else { window.close(); }
+      },
+      25);
+      window.location = app_loc;
+    }
+  } else {
+  	alert("Here in last")
+    location.href = href;
+  }
+}
+</script>
 
 </head>
 <body>
@@ -47,7 +97,6 @@ Released   : 20131201
 
   <p>
 
-<a href="intent:#Intent;launchFlags=0x10000000;component=com.appsdaily.platform/com.appsdaily.landingmenu.AppsDaily;end;"/>
 My current researches are focused on computer vision and dynamic modelling &amp; simulation.
 <span style="font-weight:normal"><font size="3"><br>
 <h2>Table of Contents</h2>
@@ -213,3 +262,5 @@ My current researches are focused on computer vision and dynamic modelling &amp;
 
 </body>
 </html>
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security Contact Help
